@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+  "keywords": "whatsapp-bot"
   },
-  "keywords": [
-    "whatsapp-bot"
-  ],
   "author": "",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@ffmpeg/ffmpeg": "^0.12.15",
