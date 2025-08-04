@@ -360,16 +360,18 @@ app.get("/api/status", (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`API server listening on port{port}`));
+
+app.get('/api/status', (req, res) => {
+  res.json({ status: "explore-md running", session: SESSION_FILE, time: new Date() });
+});
+
 app.get('/', (req, res) => {
   res.send('Bot is running');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
-    
-    
     
     
     
