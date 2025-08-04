@@ -361,3 +361,23 @@ app.get("/api/status", (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`API server listening on port{port}`));
+app.get('/', (req, res) => {
+  res.send('Bot is running');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
